@@ -1,3 +1,4 @@
 /.cache/
-index.html
-style.css
+/.idea/
+/src/index.html
+/src/style.css
