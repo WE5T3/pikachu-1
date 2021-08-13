@@ -1,14 +1,15 @@
-* {
+const string=`
+.skin * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-*::before, *::after {
+.skin *::before, *::after {
     box-sizing: border-box;
 }
 
-body {
+.skin {
     background: #ffe600;
     min-height: 100vh;
 }
@@ -195,21 +196,10 @@ body {
     z-index: 3;
 }
 
-.face > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
 .face.left {
     transform: translateX(-180px);
     background: #ff0000;
     border-radius: 50%;
-}
-
-.face.left > img {
-    transform: rotateY(180deg);
-    transform-origin: 0 0;
 }
 
 .face.right {
@@ -217,3 +207,5 @@ body {
     background: #ff0000;
     border-radius: 50%;
 }
+`
+export default string
