@@ -17,22 +17,18 @@ const string=`
 .skin {
     position: relative;
 }
-
 .nose {
+    border: 10px solid black;
     border-color: black transparent transparent;
-    width: 0;
-    height: 0;
+    border-bottom: none;
+    width: 0px;
+    height: 0px;
     position: relative;
     left: 50%;
     top: 145px;
     margin-left: -10px;
     z-index: 10;
 }
-
-.nose {
-    border-bottom: none;
-}
-
 @keyframes wave {
     0% {
         transform: rotate(0deg);
@@ -46,9 +42,7 @@ const string=`
     100% {
         transform: rotate(0deg);
     }
-
 }
-
 .nose:hover {
     transform-origin: center bottom;
     animation: wave 300ms infinite linear;
@@ -75,7 +69,6 @@ const string=`
     background: #2e2e2e;
     border-radius: 50%;
 }
-
 .eye::before {
     content: '';
     display: block;
@@ -88,15 +81,12 @@ const string=`
     left: 4px;
     top: 2px;
 }
-
 .eye.left {
     transform: translateX(-100px);
 }
-
 .eye.right {
     transform: translateX(100px);
 }
-
 .mouth {
     width: 200px;
     height: 200px;
@@ -105,34 +95,32 @@ const string=`
     top: 170px;
     margin-left: -100px;
 }
-
 .mouth .up {
     position: relative;
     top: -20px;
     z-index: 1;
 }
-
 .mouth .up .lip {
+    border: 3px solid black;
     height: 30px;
     width: 100px;
     background: #ffe600;
-    border: 3px solid transparent;
-    border-bottom-color: black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: relative;
     position: absolute;
     left: 50%;
     margin-left: -50px;
 }
-
 .mouth .up .lip.left {
     border-radius: 0 0 0 50px;
     transform: rotate(-15deg) translateX(-53px);
 }
-
 .mouth .up .lip.right {
-    border-radius: 0 0 50px 0;
+    border-radius: 0 0 50px 0px;
     transform: rotate(15deg) translateX(53px);
 }
-
 .mouth .up .lip::before {
     content: '';
     display: block;
@@ -142,16 +130,12 @@ const string=`
     bottom: 0;
     background: #ffe600;
 }
-
 .mouth .up .lip.left::before {
     right: -6px;
-
 }
-
 .mouth .up .lip.right::before {
     left: -6px;
 }
-
 .mouth .down {
     height: 180px;
     position: absolute;
@@ -159,7 +143,6 @@ const string=`
     width: 100%;
     overflow: hidden;
 }
-
 .mouth .down .yuan1 {
     border: 3px solid black;
     width: 150px;
@@ -172,7 +155,6 @@ const string=`
     background: #9b000a;
     overflow: hidden;
 }
-
 .mouth .down .yuan1 .yuan2 {
     width: 200px;
     height: 300px;
@@ -182,9 +164,7 @@ const string=`
     left: 50%;
     margin-left: -100px;
     border-radius: 100px;
-
 }
-
 .face {
     position: absolute;
     left: 50%;
@@ -207,5 +187,6 @@ const string=`
     background: #ff0000;
     border-radius: 50%;
 }
+
 `
 export default string
